@@ -1,0 +1,57 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "task_type": "无忧鼠标点击",
+            "pos_x": -62.0,
+            "pos_y": -41.0,
+            "parameters": {
+                "coordinate_x": 93,
+                "coordinate_y": 172,
+                "coordinate_selector_tool": null,
+                "action_type": "移动并点击",
+                "move_mode": "绝对移动(MoveTo)",
+                "move_width": 0,
+                "move_height": 0,
+                "button_action": "单击",
+                "button": "左键",
+                "wheel_direction": "向下",
+                "wheel_count": 1,
+                "enable_real_mouse": true,
+                "mouse_delay": 10,
+                "mouse_step": 5,
+                "enable_next_step_delay": false,
+                "delay_mode": "固定延迟",
+                "fixed_delay": 1.0,
+                "min_delay": 0.5,
+                "max_delay": 2.0,
+                "on_success": "执行下一步",
+                "success_jump_target_id": null,
+                "on_failure": "执行下一步",
+                "failure_jump_target_id": null
+            },
+            "custom_name": null
+        }
+    ],
+    "connections": [],
+    "view_transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+    ],
+    "metadata": {
+        "created_date": "2025-11-25T22:29:07.789007",
+        "engine_version": "1.0.0",
+        "module_versions": {}
+    },
+    "view_center": [
+        -3.0,
+        -3.0
+    ]
+}

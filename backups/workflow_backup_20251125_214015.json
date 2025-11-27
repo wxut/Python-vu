@@ -1,0 +1,24 @@
+{
+    "cards": [],
+    "connections": [],
+    "view_transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+    ],
+    "metadata": {
+        "created_date": "2025-11-25T21:40:15.937523",
+        "engine_version": "1.0.0",
+        "module_versions": {}
+    },
+    "view_center": [
+        -1.0,
+        -1.0
+    ]
+}
