@@ -1,0 +1,548 @@
+2025-11-26 20:52:46,370 - __main__ - INFO - ================================================================================
+2025-11-26 20:52:46,371 - __main__ - INFO - 无忧自动化工具启动中...
+2025-11-26 20:52:46,371 - __main__ - INFO - ================================================================================
+2025-11-26 20:52:46,372 - __main__ - INFO - [OK] 程序已以管理员权限运行
+2025-11-26 20:52:46,423 - __main__ - ERROR - [FAIL] 配置文件中未找到VU注册码
+2025-11-26 20:52:46,423 - __main__ - WARNING - [WARN] VU插件初始化失败，将使用Python模式运行
+2025-11-26 20:52:46,423 - __main__ - INFO - [INFO] 程序将以有限功能模式启动（仅支持Python实现的功能）
+2025-11-26 20:52:46,451 - utils.universal_config_manager - WARNING - 配置文件不存在，使用默认配置: C:\Users\x\Desktop\wy\config\universal_system_config.json
+2025-11-26 20:52:46,648 - tasks.find_color_task - ERROR - 错误：缺少必要的库。请运行 'pip install pyautogui numpy opencv-python Pillow mss' 来安装。
+2025-11-26 20:52:46,649 - __main__ - ERROR - 加载任务模块失败: No module named 'pyautogui'
+2025-11-26 20:52:47,094 - __main__ - ERROR - 程序启动失败: No module named 'cv2'
+Traceback (most recent call last):
+  File "C:\Users\x\Desktop\wy\main.py", line 178, in main
+    from ui.main_window import MainWindow
+  File "C:\Users\x\Desktop\wy\ui\main_window.py", line 45, in <module>
+    from .workflow_view import WorkflowView, ConnectionLine # <<< Added ConnectionLine
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x\Desktop\wy\ui\workflow_view.py", line 27, in <module>
+    from .task_card import TaskCard, PORT_TYPES # Import TaskCard and PORT_TYPES
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x\Desktop\wy\ui\task_card.py", line 21, in <module>
+    from ui.parameter_dialog import ParameterDialog # <<< UNCOMMENTED Import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\x\Desktop\wy\ui\parameter_dialog.py", line 16, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+2025-11-26 21:06:33,176 - __main__ - INFO - ================================================================================
+2025-11-26 21:06:33,177 - __main__ - INFO - 无忧自动化工具启动中...
+2025-11-26 21:06:33,177 - __main__ - INFO - ================================================================================
+2025-11-26 21:06:33,179 - __main__ - INFO - [OK] 程序已以管理员权限运行
+2025-11-26 21:06:33,187 - __main__ - ERROR - [FAIL] 配置文件中未找到VU注册码
+2025-11-26 21:06:33,187 - __main__ - WARNING - [WARN] VU插件初始化失败，将使用Python模式运行
+2025-11-26 21:06:33,187 - __main__ - INFO - [INFO] 程序将以有限功能模式启动（仅支持Python实现的功能）
+2025-11-26 21:06:33,190 - utils.universal_config_manager - WARNING - 配置文件不存在，使用默认配置: C:\Users\x\Desktop\wy\config\universal_system_config.json
+2025-11-26 21:06:33,511 - utils.screenshot_helper - WARNING - VU 截图不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)，截图功能将受限
+2025-11-26 21:06:33,582 - utils.emulator_text_input_new - INFO - 成功导入新的模拟器按键映射模块
+2025-11-26 21:06:33,662 - utils.mumu_manager - INFO - 开始从运行中的进程查找MuMu模拟器...
+2025-11-26 21:06:33,669 - utils.mumu_manager - INFO - 尝试通过MuMu窗口查找安装路径...
+2025-11-26 21:06:33,670 - utils.mumu_manager - WARNING - 未找到MuMuManager.exe，MuMu模拟器功能将不可用
+2025-11-26 21:06:33,670 - utils.mumu_manager - WARNING - ⚠ MuMuManager初始化失败：未找到MuMuManager.exe
+2025-11-26 21:06:33,685 - services.unified_ocr_service - WARNING - VU OCR 不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)
+2025-11-26 21:06:33,958 - utils.input_simulation.factory - INFO - 默认操作模式已设置为: auto
+2025-11-26 21:06:33,958 - utils.backend_modes - INFO - 全局操作模式已设置为: auto
+2025-11-26 21:06:33,959 - utils.input_simulation.factory - WARNING - 无效的执行模式: foreground_driver
+2025-11-26 21:06:33,959 - utils.backend_modes - INFO - 全局执行模式已设置为: foreground_driver
+2025-11-26 21:06:33,976 - ui.workflow_task_manager - INFO - 工作流任务管理器初始化完成
+2025-11-26 21:06:33,981 - ui.workflow_tab_widget - INFO - 工作流标签页控件初始化完成
+2025-11-26 21:06:34,010 - utils.unified_dpi_handler - INFO - 统一DPI处理器初始化完成
+2025-11-26 21:06:34,010 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-26 21:06:34,011 - ui.main_window - INFO - DPI监控已设置
+2025-11-26 21:06:34,013 - root - INFO - 单窗口模式：未配置目标窗口标题或自定义分辨率，跳过初始大小调整。
+2025-11-26 21:06:34,013 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-26 21:06:34,014 - ui.main_window - INFO - DPI监控已启动
+2025-11-26 21:06:34,014 - ui.main_window - INFO - 快捷键信号已连接到安全执行方法
+2025-11-26 21:06:34,080 - ui.main_window - INFO - 已清除所有现有快捷键
+2025-11-26 21:06:34,182 - ui.main_window - INFO - 启动任务快捷键已设置: F9 (强制模式)
+2025-11-26 21:06:34,182 - ui.main_window - INFO - 停止任务快捷键已设置: F10 (强制模式)
+2025-11-26 21:06:34,183 - ui.main_window - INFO - ✓ 快捷键系统已更新 - 启动: F9, 停止: F10
+2025-11-26 21:06:34,189 - core.dual_mode_manager - INFO - ✅ 模式已切换到: python
+2025-11-26 21:06:34,189 - __main__ - INFO - [INFO] 无VU插件，强制使用Python模式
+2025-11-26 21:06:34,239 - __main__ - INFO - [OK] 主窗口已启动
+2025-11-26 21:06:34,282 - ui.main_window - INFO - 🔍 检查模拟器窗口状态...
+2025-11-26 21:06:34,284 - ui.main_window - INFO - ❌ 未检测到模拟器窗口，直接启用运行按钮
+2025-11-26 21:06:34,286 - ui.main_window - INFO - ✅ 运行按钮已启用（无需ADB初始化）
+2025-11-26 21:06:42,377 - ui.main_window - INFO - 打开全局设置前，MainWindow.config 中的 bound_windows: 0 个
+2025-11-26 21:06:42,378 - ui.main_window - INFO - GlobalSettingsDialog初始化: 从空列表开始,不加载历史绑定窗口
+2025-11-26 21:11:50,790 - ui.main_window - WARNING - 🚨 MainWindow closeEvent triggered!
+2025-11-26 21:11:50,791 - utils.unified_dpi_handler - INFO - DPI监控已禁用
+2025-11-26 21:11:50,791 - ui.main_window - INFO - DPI监控已停止
+2025-11-26 21:11:50,792 - ui.main_window - INFO - closeEvent: 接受关闭事件，准备退出应用程序...
+2025-11-26 23:29:26,192 - __main__ - INFO - ================================================================================
+2025-11-26 23:29:26,192 - __main__ - INFO - 无忧自动化工具启动中...
+2025-11-26 23:29:26,193 - __main__ - INFO - ================================================================================
+2025-11-26 23:29:26,194 - __main__ - INFO - [OK] 程序已以管理员权限运行
+2025-11-26 23:29:26,205 - __main__ - ERROR - [FAIL] 配置文件中未找到VU注册码
+2025-11-26 23:29:26,205 - __main__ - WARNING - [WARN] VU插件初始化失败，将使用Python模式运行
+2025-11-26 23:29:26,205 - __main__ - INFO - [INFO] 程序将以有限功能模式启动（仅支持Python实现的功能）
+2025-11-26 23:29:26,213 - utils.universal_config_manager - WARNING - 配置文件不存在，使用默认配置: C:\Users\x\Desktop\wy\config\universal_system_config.json
+2025-11-26 23:29:26,622 - utils.screenshot_helper - WARNING - VU 截图不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)，截图功能将受限
+2025-11-26 23:29:26,625 - utils.emulator_text_input_new - INFO - 成功导入新的模拟器按键映射模块
+2025-11-26 23:29:26,637 - utils.mumu_manager - INFO - 开始从运行中的进程查找MuMu模拟器...
+2025-11-26 23:29:26,641 - utils.mumu_manager - INFO - 尝试通过MuMu窗口查找安装路径...
+2025-11-26 23:29:26,642 - utils.mumu_manager - WARNING - 未找到MuMuManager.exe，MuMu模拟器功能将不可用
+2025-11-26 23:29:26,642 - utils.mumu_manager - WARNING - ⚠ MuMuManager初始化失败：未找到MuMuManager.exe
+2025-11-26 23:29:26,645 - services.unified_ocr_service - WARNING - VU OCR 不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)
+2025-11-26 23:29:27,047 - utils.input_simulation.factory - INFO - 默认操作模式已设置为: auto
+2025-11-26 23:29:27,047 - utils.backend_modes - INFO - 全局操作模式已设置为: auto
+2025-11-26 23:29:27,047 - utils.input_simulation.factory - WARNING - 无效的执行模式: foreground_driver
+2025-11-26 23:29:27,048 - utils.backend_modes - INFO - 全局执行模式已设置为: foreground_driver
+2025-11-26 23:29:27,054 - ui.workflow_task_manager - INFO - 工作流任务管理器初始化完成
+2025-11-26 23:29:27,068 - ui.workflow_tab_widget - INFO - 工作流标签页控件初始化完成
+2025-11-26 23:29:27,103 - utils.unified_dpi_handler - INFO - 统一DPI处理器初始化完成
+2025-11-26 23:29:27,103 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-26 23:29:27,104 - ui.main_window - INFO - DPI监控已设置
+2025-11-26 23:29:27,107 - root - INFO - 单窗口模式：未配置目标窗口标题或自定义分辨率，跳过初始大小调整。
+2025-11-26 23:29:27,107 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-26 23:29:27,107 - ui.main_window - INFO - DPI监控已启动
+2025-11-26 23:29:27,107 - ui.main_window - INFO - 快捷键信号已连接到安全执行方法
+2025-11-26 23:29:27,168 - ui.main_window - INFO - 已清除所有现有快捷键
+2025-11-26 23:29:27,269 - ui.main_window - INFO - 启动任务快捷键已设置: F9 (强制模式)
+2025-11-26 23:29:27,269 - ui.main_window - INFO - 停止任务快捷键已设置: F10 (强制模式)
+2025-11-26 23:29:27,270 - ui.main_window - INFO - ✓ 快捷键系统已更新 - 启动: F9, 停止: F10
+2025-11-26 23:29:27,272 - core.dual_mode_manager - INFO - ✅ 模式已切换到: python
+2025-11-26 23:29:27,272 - __main__ - INFO - [INFO] 无VU插件，强制使用Python模式
+2025-11-26 23:29:27,366 - __main__ - INFO - [OK] 主窗口已启动
+2025-11-26 23:29:27,379 - ui.main_window - INFO - 🔍 检查模拟器窗口状态...
+2025-11-26 23:29:27,380 - ui.main_window - INFO - ❌ 未检测到模拟器窗口，直接启用运行按钮
+2025-11-26 23:29:27,380 - ui.main_window - INFO - ✅ 运行按钮已启用（无需ADB初始化）
+2025-11-26 23:29:28,973 - ui.main_window - INFO - 打开全局设置前，MainWindow.config 中的 bound_windows: 0 个
+2025-11-26 23:29:28,974 - ui.main_window - INFO - GlobalSettingsDialog初始化: 从空列表开始,不加载历史绑定窗口
+2025-11-26 23:30:04,150 - ui.workflow_task - INFO - 创建任务: ID=1, 名称='未命名工作流1'
+2025-11-26 23:30:04,150 - ui.workflow_tab_widget - INFO - 添加第一个任务，显示标签栏
+2025-11-26 23:30:04,155 - root - INFO - WorkflowView Initialized.
+2025-11-26 23:30:04,162 - ui.workflow_tab_widget - INFO - 🎨 WorkflowView创建完成:
+2025-11-26 23:30:04,163 - ui.workflow_tab_widget - INFO -    dragMode: DragMode.ScrollHandDrag
+2025-11-26 23:30:04,163 - ui.workflow_tab_widget - INFO -    interactive: True
+2025-11-26 23:30:04,163 - ui.workflow_tab_widget - INFO -    enabled: True
+2025-11-26 23:30:04,164 - ui.workflow_tab_widget - INFO -    focusPolicy: 11
+2025-11-26 23:30:04,164 - ui.workflow_view - INFO - WorkflowView: 开始从数据字典加载工作流...
+2025-11-26 23:30:04,165 - ui.workflow_view - INFO -   [UNDO] Loading workflow in progress, keeping flag as True
+2025-11-26 23:30:04,165 - ui.workflow_view - INFO - Workflow cleared.
+2025-11-26 23:30:04,165 - ui.workflow_view - INFO - 未从文件恢复视图变换。
+2025-11-26 23:30:04,166 - ui.workflow_view - INFO - 工作流已从数据字典加载完成。卡片数: 0, 连接数: 0
+2025-11-26 23:30:04,174 - ui.workflow_view - INFO - 验证加载后的连接完整性...
+2025-11-26 23:30:04,175 - ui.workflow_view - INFO - 加载后连接验证通过，所有连接完整有效
+2025-11-26 23:30:04,175 - ui.workflow_view - INFO -   [UNDO] Cleared loading workflow flag
+2025-11-26 23:30:04,175 - ui.workflow_tab_widget - INFO -    加载后dragMode: DragMode.ScrollHandDrag
+2025-11-26 23:30:04,178 - ui.workflow_tab_widget - INFO - 📝 标签页插入: insert_index=0, 返回tab_index=0
+2025-11-26 23:30:04,178 - ui.workflow_tab_widget - INFO - 📊 映射关系重建完成:
+2025-11-26 23:30:04,179 - ui.workflow_tab_widget - INFO -    tab_to_task: {0: 1}
+2025-11-26 23:30:04,179 - ui.workflow_tab_widget - INFO -    task_to_tab: {1: 0}
+2025-11-26 23:30:04,181 - ui.workflow_tab_widget - INFO - 🔔 标签页变化事件触发: index=0, count=2
+2025-11-26 23:30:04,181 - ui.main_window - INFO - 🔄 切换到工作流标签页: task_id=1
+2025-11-26 23:30:04,181 - ui.main_window - INFO -    旧WorkflowView: None
+2025-11-26 23:30:04,182 - ui.main_window - INFO -    新WorkflowView: <ui.workflow_view.WorkflowView(0x21aa6272130) at 0x0000021AB1577A80>
+2025-11-26 23:30:04,182 - ui.main_window - INFO -    当前拖拽模式: DragMode.ScrollHandDrag
+2025-11-26 23:30:04,183 - ui.main_window - INFO -    已强制设置拖拽模式为: ScrollHandDrag
+2025-11-26 23:30:04,183 - ui.main_window - INFO -    场景大小: 1382.0x1268.0
+2025-11-26 23:30:04,183 - ui.main_window - INFO -    视口大小: 982x584
+2025-11-26 23:30:04,184 - ui.main_window - INFO -    卡片数量: 0
+2025-11-26 23:30:04,184 - ui.main_window - INFO -    横向滚动条可见: True
+2025-11-26 23:30:04,184 - ui.main_window - INFO -    纵向滚动条可见: True
+2025-11-26 23:30:04,184 - ui.main_window - WARNING -    ⚠️ 场景中没有items，无法调整场景大小
+2025-11-26 23:30:04,185 - ui.main_window - INFO - ✅ WorkflowView切换完成，可拖动: True
+2025-11-26 23:30:04,185 - ui.main_window - INFO - 📊 任务数量变化: 当前任务数=1
+2025-11-26 23:30:04,186 - ui.main_window - INFO -    显示执行面板
+2025-11-26 23:30:04,186 - ui.workflow_task_manager - INFO - 添加任务成功: ID=1, 名称='未命名工作流1'
+2025-11-26 23:30:04,187 - ui.workflow_tab_widget - INFO - 空白工作流创建成功: 未命名工作流1
+2025-11-26 23:30:04,187 - ui.main_window - INFO - 空白工作流创建成功，任务ID: 1
+2025-11-26 23:30:21,921 - ui.main_window - INFO - 打开全局设置前，MainWindow.config 中的 bound_windows: 0 个
+2025-11-26 23:30:21,922 - ui.main_window - INFO - GlobalSettingsDialog初始化: 从空列表开始,不加载历史绑定窗口
+2025-11-26 23:30:43,982 - ui.main_window - INFO - 打开全局设置前，MainWindow.config 中的 bound_windows: 0 个
+2025-11-26 23:30:43,983 - ui.main_window - INFO - GlobalSettingsDialog初始化: 从空列表开始,不加载历史绑定窗口
+2025-11-26 23:31:56,407 - ui.workflow_view - INFO - 序列化完成：找到 1 个卡片，0 个连接。
+2025-11-26 23:31:56,408 - ui.main_window - INFO - 新卡片添加: 0
+2025-11-26 23:31:57,745 - ui.main_window - INFO - 显示卡片 0 的参数面板
+2025-11-26 23:31:57,745 - ui.parameter_panel - INFO - 显示卡片 0 (VU JSON处理) 的参数设置
+2025-11-26 23:32:02,836 - ui.workflow_view - INFO - 序列化完成：找到 2 个卡片，0 个连接。
+2025-11-26 23:32:02,837 - ui.main_window - INFO - 新卡片添加: 1
+2025-11-26 23:32:03,932 - ui.main_window - INFO - 显示卡片 1 的参数面板
+2025-11-26 23:32:03,933 - ui.parameter_panel - INFO - 显示卡片 1 (VU AI找图) 的参数设置
+2025-11-26 23:32:05,082 - ui.main_window - INFO - 参数面板已关闭
+2025-11-26 23:32:14,112 - ui.workflow_view - INFO - 序列化完成：找到 3 个卡片，0 个连接。
+2025-11-26 23:32:14,112 - ui.main_window - INFO - 新卡片添加: 2
+2025-11-26 23:32:16,836 - ui.main_window - INFO - 显示卡片 2 的参数面板
+2025-11-26 23:32:16,836 - ui.parameter_panel - INFO - 显示卡片 2 (VU AI检测) 的参数设置
+2025-11-26 23:32:18,078 - ui.main_window - INFO - 参数面板已关闭
+2025-11-26 23:32:28,976 - ui.workflow_view - INFO - 序列化完成：找到 4 个卡片，0 个连接。
+2025-11-26 23:32:28,977 - ui.main_window - INFO - 新卡片添加: 3
+2025-11-26 23:32:30,324 - ui.main_window - INFO - 显示卡片 3 的参数面板
+2025-11-26 23:32:30,324 - ui.parameter_panel - INFO - 显示卡片 3 (VU OCR识别) 的参数设置
+2025-11-26 23:32:31,178 - ui.main_window - INFO - 参数面板已关闭
+2025-11-26 23:32:37,904 - ui.workflow_view - INFO - 序列化完成：找到 5 个卡片，0 个连接。
+2025-11-26 23:32:37,905 - ui.main_window - INFO - 新卡片添加: 4
+2025-11-26 23:32:44,439 - ui.workflow_view - INFO - 序列化完成：找到 6 个卡片，0 个连接。
+2025-11-26 23:32:44,440 - ui.main_window - INFO - 新卡片添加: 5
+2025-11-26 23:32:51,287 - ui.workflow_view - INFO - 序列化完成：找到 7 个卡片，0 个连接。
+2025-11-26 23:32:51,287 - ui.main_window - INFO - 新卡片添加: 6
+2025-11-26 23:32:56,927 - ui.workflow_view - INFO - 序列化完成：找到 8 个卡片，0 个连接。
+2025-11-26 23:32:56,928 - ui.main_window - INFO - 新卡片添加: 7
+2025-11-26 23:33:02,562 - ui.workflow_view - INFO - 序列化完成：找到 9 个卡片，0 个连接。
+2025-11-26 23:33:02,562 - ui.main_window - INFO - 新卡片添加: 8
+2025-11-26 23:33:10,941 - ui.workflow_view - INFO - 序列化完成：找到 10 个卡片，0 个连接。
+2025-11-26 23:33:10,942 - ui.main_window - INFO - 新卡片添加: 9
+2025-11-26 23:33:12,973 - ui.main_window - INFO - 显示卡片 9 的参数面板
+2025-11-26 23:33:12,973 - ui.parameter_panel - INFO - 显示卡片 9 (VU找图Ex) 的参数设置
+2025-11-26 23:33:17,068 - ui.main_window - INFO - 参数面板已关闭
+2025-11-26 23:33:24,253 - ui.workflow_view - INFO - 序列化完成：找到 11 个卡片，0 个连接。
+2025-11-26 23:33:24,254 - ui.main_window - INFO - 新卡片添加: 10
+2025-11-26 23:33:37,588 - ui.workflow_view - INFO - 序列化完成：找到 12 个卡片，0 个连接。
+2025-11-26 23:33:37,589 - ui.main_window - INFO - 新卡片添加: 11
+2025-11-26 23:33:39,973 - ui.main_window - INFO - 显示卡片 11 的参数面板
+2025-11-26 23:33:39,974 - ui.parameter_panel - INFO - 显示卡片 11 (VU超级找图) 的参数设置
+2025-11-26 23:33:41,603 - ui.main_window - INFO - 参数面板已关闭
+2025-11-26 23:33:43,705 - ui.main_window - INFO - 显示卡片 10 的参数面板
+2025-11-26 23:33:43,705 - ui.parameter_panel - INFO - 显示卡片 10 (无忧鼠标点击) 的参数设置
+2025-11-26 23:35:48,736 - ui.main_window - WARNING - 🚨 MainWindow closeEvent triggered!
+2025-11-27 08:54:56,599 - __main__ - INFO - ================================================================================
+2025-11-27 08:54:56,600 - __main__ - INFO - 无忧自动化工具启动中...
+2025-11-27 08:54:56,600 - __main__ - INFO - ================================================================================
+2025-11-27 08:54:56,602 - __main__ - INFO - [OK] 程序已以管理员权限运行
+2025-11-27 08:54:56,611 - __main__ - ERROR - [FAIL] 配置文件中未找到VU注册码
+2025-11-27 08:54:56,613 - __main__ - WARNING - [WARN] VU插件初始化失败，将使用Python模式运行
+2025-11-27 08:54:56,613 - __main__ - INFO - [INFO] 程序将以有限功能模式启动（仅支持Python实现的功能）
+2025-11-27 08:54:56,618 - utils.universal_config_manager - WARNING - 配置文件不存在，使用默认配置: C:\Users\x\Desktop\wy\config\universal_system_config.json
+2025-11-27 08:54:56,886 - utils.screenshot_helper - WARNING - VU 截图不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)，截图功能将受限
+2025-11-27 08:54:56,889 - utils.emulator_text_input_new - INFO - 成功导入新的模拟器按键映射模块
+2025-11-27 08:54:56,899 - utils.mumu_manager - INFO - 开始从运行中的进程查找MuMu模拟器...
+2025-11-27 08:54:56,907 - utils.mumu_manager - INFO - 尝试通过MuMu窗口查找安装路径...
+2025-11-27 08:54:56,908 - utils.mumu_manager - WARNING - 未找到MuMuManager.exe，MuMu模拟器功能将不可用
+2025-11-27 08:54:56,908 - utils.mumu_manager - WARNING - ⚠ MuMuManager初始化失败：未找到MuMuManager.exe
+2025-11-27 08:54:56,910 - services.unified_ocr_service - WARNING - VU OCR 不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)
+2025-11-27 08:54:57,082 - utils.input_simulation.factory - INFO - 默认操作模式已设置为: auto
+2025-11-27 08:54:57,082 - utils.backend_modes - INFO - 全局操作模式已设置为: auto
+2025-11-27 08:54:57,083 - utils.input_simulation.factory - WARNING - 无效的执行模式: foreground_driver
+2025-11-27 08:54:57,083 - utils.backend_modes - INFO - 全局执行模式已设置为: foreground_driver
+2025-11-27 08:54:57,088 - ui.workflow_task_manager - INFO - 工作流任务管理器初始化完成
+2025-11-27 08:54:57,094 - ui.workflow_tab_widget - INFO - 工作流标签页控件初始化完成
+2025-11-27 08:54:57,123 - utils.unified_dpi_handler - INFO - 统一DPI处理器初始化完成
+2025-11-27 08:54:57,123 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 08:54:57,124 - ui.main_window - INFO - DPI监控已设置
+2025-11-27 08:54:57,126 - root - INFO - 单窗口模式：未配置目标窗口标题或自定义分辨率，跳过初始大小调整。
+2025-11-27 08:54:57,127 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 08:54:57,127 - ui.main_window - INFO - DPI监控已启动
+2025-11-27 08:54:57,127 - ui.main_window - INFO - 快捷键信号已连接到安全执行方法
+2025-11-27 08:54:57,191 - ui.main_window - INFO - 已清除所有现有快捷键
+2025-11-27 08:54:57,293 - ui.main_window - INFO - 启动任务快捷键已设置: F9 (强制模式)
+2025-11-27 08:54:57,293 - ui.main_window - INFO - 停止任务快捷键已设置: F10 (强制模式)
+2025-11-27 08:54:57,294 - ui.main_window - INFO - ✓ 快捷键系统已更新 - 启动: F9, 停止: F10
+2025-11-27 08:54:57,296 - core.dual_mode_manager - INFO - ✅ 模式已切换到: python
+2025-11-27 08:54:57,297 - __main__ - INFO - [INFO] 无VU插件，强制使用Python模式
+2025-11-27 08:54:57,366 - __main__ - INFO - [OK] 主窗口已启动
+2025-11-27 08:54:57,400 - ui.main_window - INFO - 🔍 检查模拟器窗口状态...
+2025-11-27 08:54:57,401 - ui.main_window - INFO - ❌ 未检测到模拟器窗口，直接启用运行按钮
+2025-11-27 08:54:57,403 - ui.main_window - INFO - ✅ 运行按钮已启用（无需ADB初始化）
+2025-11-27 08:54:59,945 - ui.main_window - INFO - 打开全局设置前，MainWindow.config 中的 bound_windows: 0 个
+2025-11-27 08:54:59,946 - ui.main_window - INFO - GlobalSettingsDialog初始化: 从空列表开始,不加载历史绑定窗口
+2025-11-27 08:55:03,614 - ui.workflow_task - INFO - 创建任务: ID=1, 名称='未命名工作流1'
+2025-11-27 08:55:03,615 - ui.workflow_tab_widget - INFO - 添加第一个任务，显示标签栏
+2025-11-27 08:55:03,618 - root - INFO - WorkflowView Initialized.
+2025-11-27 08:55:03,625 - ui.workflow_tab_widget - INFO - 🎨 WorkflowView创建完成:
+2025-11-27 08:55:03,625 - ui.workflow_tab_widget - INFO -    dragMode: DragMode.ScrollHandDrag
+2025-11-27 08:55:03,625 - ui.workflow_tab_widget - INFO -    interactive: True
+2025-11-27 08:55:03,626 - ui.workflow_tab_widget - INFO -    enabled: True
+2025-11-27 08:55:03,626 - ui.workflow_tab_widget - INFO -    focusPolicy: 11
+2025-11-27 08:55:03,626 - ui.workflow_view - INFO - WorkflowView: 开始从数据字典加载工作流...
+2025-11-27 08:55:03,627 - ui.workflow_view - INFO -   [UNDO] Loading workflow in progress, keeping flag as True
+2025-11-27 08:55:03,627 - ui.workflow_view - INFO - Workflow cleared.
+2025-11-27 08:55:03,627 - ui.workflow_view - INFO - 未从文件恢复视图变换。
+2025-11-27 08:55:03,628 - ui.workflow_view - INFO - 工作流已从数据字典加载完成。卡片数: 0, 连接数: 0
+2025-11-27 08:55:03,628 - ui.workflow_view - INFO - 验证加载后的连接完整性...
+2025-11-27 08:55:03,628 - ui.workflow_view - INFO - 加载后连接验证通过，所有连接完整有效
+2025-11-27 08:55:03,629 - ui.workflow_view - INFO -   [UNDO] Cleared loading workflow flag
+2025-11-27 08:55:03,629 - ui.workflow_tab_widget - INFO -    加载后dragMode: DragMode.ScrollHandDrag
+2025-11-27 08:55:03,634 - ui.workflow_tab_widget - INFO - 📝 标签页插入: insert_index=0, 返回tab_index=0
+2025-11-27 08:55:03,634 - ui.workflow_tab_widget - INFO - 📊 映射关系重建完成:
+2025-11-27 08:55:03,635 - ui.workflow_tab_widget - INFO -    tab_to_task: {0: 1}
+2025-11-27 08:55:03,635 - ui.workflow_tab_widget - INFO -    task_to_tab: {1: 0}
+2025-11-27 08:55:03,636 - ui.workflow_tab_widget - INFO - 🔔 标签页变化事件触发: index=0, count=2
+2025-11-27 08:55:03,637 - ui.main_window - INFO - 🔄 切换到工作流标签页: task_id=1
+2025-11-27 08:55:03,637 - ui.main_window - INFO -    旧WorkflowView: None
+2025-11-27 08:55:03,637 - ui.main_window - INFO -    新WorkflowView: <ui.workflow_view.WorkflowView(0x20de1375ee0) at 0x0000020DE8266E40>
+2025-11-27 08:55:03,638 - ui.main_window - INFO -    当前拖拽模式: DragMode.ScrollHandDrag
+2025-11-27 08:55:03,638 - ui.main_window - INFO -    已强制设置拖拽模式为: ScrollHandDrag
+2025-11-27 08:55:03,639 - ui.main_window - INFO -    场景大小: 1382.0x1268.0
+2025-11-27 08:55:03,639 - ui.main_window - INFO -    视口大小: 982x584
+2025-11-27 08:55:03,639 - ui.main_window - INFO -    卡片数量: 0
+2025-11-27 08:55:03,639 - ui.main_window - INFO -    横向滚动条可见: True
+2025-11-27 08:55:03,640 - ui.main_window - INFO -    纵向滚动条可见: True
+2025-11-27 08:55:03,640 - ui.main_window - WARNING -    ⚠️ 场景中没有items，无法调整场景大小
+2025-11-27 08:55:03,640 - ui.main_window - INFO - ✅ WorkflowView切换完成，可拖动: True
+2025-11-27 08:55:03,641 - ui.main_window - INFO - 📊 任务数量变化: 当前任务数=1
+2025-11-27 08:55:03,641 - ui.main_window - INFO -    显示执行面板
+2025-11-27 08:55:03,642 - ui.workflow_task_manager - INFO - 添加任务成功: ID=1, 名称='未命名工作流1'
+2025-11-27 08:55:03,642 - ui.workflow_tab_widget - INFO - 空白工作流创建成功: 未命名工作流1
+2025-11-27 08:55:03,642 - ui.main_window - INFO - 空白工作流创建成功，任务ID: 1
+2025-11-27 08:55:18,526 - ui.workflow_view - INFO - 序列化完成：找到 1 个卡片，0 个连接。
+2025-11-27 08:55:18,527 - ui.main_window - INFO - 新卡片添加: 0
+2025-11-27 08:55:19,616 - ui.main_window - INFO - 显示卡片 0 的参数面板
+2025-11-27 08:55:19,616 - ui.parameter_panel - INFO - 显示卡片 0 (VU AI找图) 的参数设置
+2025-11-27 08:55:21,422 - ui.main_window - INFO - 参数面板已关闭
+2025-11-27 08:55:23,286 - ui.workflow_view - INFO - 删除卡片: 0
+2025-11-27 08:55:23,297 - ui.workflow_view - INFO - 序列化完成：找到 0 个卡片，0 个连接。
+2025-11-27 08:55:37,294 - ui.workflow_view - INFO - 序列化完成：找到 1 个卡片，0 个连接。
+2025-11-27 08:55:37,294 - ui.main_window - INFO - 新卡片添加: 1
+2025-11-27 08:55:37,295 - ui.workflow_view - WARNING -   [SEQ_DEBUG] Card 0 not found. Sequence numbering will not be performed automatically from 0.
+2025-11-27 08:55:39,912 - ui.main_window - INFO - 显示卡片 1 的参数面板
+2025-11-27 08:55:39,912 - ui.parameter_panel - INFO - 显示卡片 1 (VU找图Ex) 的参数设置
+2025-11-27 08:55:42,608 - ui.main_window - INFO - 参数面板已关闭
+2025-11-27 08:55:43,991 - ui.main_window - WARNING - 🚨 MainWindow closeEvent triggered!
+2025-11-27 08:55:43,991 - utils.unified_dpi_handler - INFO - DPI监控已禁用
+2025-11-27 08:55:44,002 - ui.main_window - INFO - DPI监控已停止
+2025-11-27 08:55:45,185 - ui.main_window - INFO - closeEvent: 接受关闭事件，准备退出应用程序...
+2025-11-27 08:56:10,322 - __main__ - INFO - ================================================================================
+2025-11-27 08:56:10,323 - __main__ - INFO - 无忧自动化工具启动中...
+2025-11-27 08:56:10,323 - __main__ - INFO - ================================================================================
+2025-11-27 08:56:10,325 - __main__ - INFO - [OK] 程序已以管理员权限运行
+2025-11-27 08:56:10,333 - __main__ - ERROR - [FAIL] 配置文件中未找到VU注册码
+2025-11-27 08:56:10,333 - __main__ - WARNING - [WARN] VU插件初始化失败，将使用Python模式运行
+2025-11-27 08:56:10,333 - __main__ - INFO - [INFO] 程序将以有限功能模式启动（仅支持Python实现的功能）
+2025-11-27 08:56:10,338 - utils.universal_config_manager - WARNING - 配置文件不存在，使用默认配置: C:\Users\x\Desktop\wy\config\universal_system_config.json
+2025-11-27 08:56:10,575 - utils.screenshot_helper - WARNING - VU 截图不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)，截图功能将受限
+2025-11-27 08:56:10,579 - utils.emulator_text_input_new - INFO - 成功导入新的模拟器按键映射模块
+2025-11-27 08:56:10,608 - utils.mumu_manager - INFO - 开始从运行中的进程查找MuMu模拟器...
+2025-11-27 08:56:10,616 - utils.mumu_manager - INFO - 尝试通过MuMu窗口查找安装路径...
+2025-11-27 08:56:10,618 - utils.mumu_manager - WARNING - 未找到MuMuManager.exe，MuMu模拟器功能将不可用
+2025-11-27 08:56:10,618 - utils.mumu_manager - WARNING - ⚠ MuMuManager初始化失败：未找到MuMuManager.exe
+2025-11-27 08:56:10,620 - services.unified_ocr_service - WARNING - VU OCR 不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)
+2025-11-27 08:56:10,766 - utils.input_simulation.factory - INFO - 默认操作模式已设置为: auto
+2025-11-27 08:56:10,767 - utils.backend_modes - INFO - 全局操作模式已设置为: auto
+2025-11-27 08:56:10,767 - utils.input_simulation.factory - WARNING - 无效的执行模式: foreground_driver
+2025-11-27 08:56:10,767 - utils.backend_modes - INFO - 全局执行模式已设置为: foreground_driver
+2025-11-27 08:56:10,773 - ui.workflow_task_manager - INFO - 工作流任务管理器初始化完成
+2025-11-27 08:56:10,777 - ui.workflow_tab_widget - INFO - 工作流标签页控件初始化完成
+2025-11-27 08:56:10,801 - utils.unified_dpi_handler - INFO - 统一DPI处理器初始化完成
+2025-11-27 08:56:10,802 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 08:56:10,802 - ui.main_window - INFO - DPI监控已设置
+2025-11-27 08:56:10,805 - root - INFO - 单窗口模式：未配置目标窗口标题或自定义分辨率，跳过初始大小调整。
+2025-11-27 08:56:10,806 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 08:56:10,806 - ui.main_window - INFO - DPI监控已启动
+2025-11-27 08:56:10,806 - ui.main_window - INFO - 快捷键信号已连接到安全执行方法
+2025-11-27 08:56:10,894 - ui.main_window - INFO - 已清除所有现有快捷键
+2025-11-27 08:56:10,995 - ui.main_window - INFO - 启动任务快捷键已设置: F9 (强制模式)
+2025-11-27 08:56:10,996 - ui.main_window - INFO - 停止任务快捷键已设置: F10 (强制模式)
+2025-11-27 08:56:10,997 - ui.main_window - INFO - ✓ 快捷键系统已更新 - 启动: F9, 停止: F10
+2025-11-27 08:56:10,999 - core.dual_mode_manager - INFO - ✅ 模式已切换到: python
+2025-11-27 08:56:10,999 - __main__ - INFO - [INFO] 无VU插件，强制使用Python模式
+2025-11-27 08:56:11,070 - __main__ - INFO - [OK] 主窗口已启动
+2025-11-27 08:56:11,115 - ui.main_window - INFO - 🔍 检查模拟器窗口状态...
+2025-11-27 08:56:11,118 - ui.main_window - INFO - ❌ 未检测到模拟器窗口，直接启用运行按钮
+2025-11-27 08:56:11,118 - ui.main_window - INFO - ✅ 运行按钮已启用（无需ADB初始化）
+2025-11-27 08:56:14,903 - ui.workflow_task - INFO - 创建任务: ID=1, 名称='未命名工作流1'
+2025-11-27 08:56:14,903 - ui.workflow_tab_widget - INFO - 添加第一个任务，显示标签栏
+2025-11-27 08:56:14,906 - root - INFO - WorkflowView Initialized.
+2025-11-27 08:56:14,913 - ui.workflow_tab_widget - INFO - 🎨 WorkflowView创建完成:
+2025-11-27 08:56:14,913 - ui.workflow_tab_widget - INFO -    dragMode: DragMode.ScrollHandDrag
+2025-11-27 08:56:14,914 - ui.workflow_tab_widget - INFO -    interactive: True
+2025-11-27 08:56:14,915 - ui.workflow_tab_widget - INFO -    enabled: True
+2025-11-27 08:56:14,915 - ui.workflow_tab_widget - INFO -    focusPolicy: 11
+2025-11-27 08:56:14,915 - ui.workflow_view - INFO - WorkflowView: 开始从数据字典加载工作流...
+2025-11-27 08:56:14,916 - ui.workflow_view - INFO -   [UNDO] Loading workflow in progress, keeping flag as True
+2025-11-27 08:56:14,916 - ui.workflow_view - INFO - Workflow cleared.
+2025-11-27 08:56:14,917 - ui.workflow_view - INFO - 未从文件恢复视图变换。
+2025-11-27 08:56:14,917 - ui.workflow_view - INFO - 工作流已从数据字典加载完成。卡片数: 0, 连接数: 0
+2025-11-27 08:56:14,918 - ui.workflow_view - INFO - 验证加载后的连接完整性...
+2025-11-27 08:56:14,918 - ui.workflow_view - INFO - 加载后连接验证通过，所有连接完整有效
+2025-11-27 08:56:14,922 - ui.workflow_view - INFO -   [UNDO] Cleared loading workflow flag
+2025-11-27 08:56:14,922 - ui.workflow_tab_widget - INFO -    加载后dragMode: DragMode.ScrollHandDrag
+2025-11-27 08:56:14,926 - ui.workflow_tab_widget - INFO - 📝 标签页插入: insert_index=0, 返回tab_index=0
+2025-11-27 08:56:14,926 - ui.workflow_tab_widget - INFO - 📊 映射关系重建完成:
+2025-11-27 08:56:14,927 - ui.workflow_tab_widget - INFO -    tab_to_task: {0: 1}
+2025-11-27 08:56:14,927 - ui.workflow_tab_widget - INFO -    task_to_tab: {1: 0}
+2025-11-27 08:56:14,928 - ui.workflow_tab_widget - INFO - 🔔 标签页变化事件触发: index=0, count=2
+2025-11-27 08:56:14,928 - ui.main_window - INFO - 🔄 切换到工作流标签页: task_id=1
+2025-11-27 08:56:14,928 - ui.main_window - INFO -    旧WorkflowView: None
+2025-11-27 08:56:14,929 - ui.main_window - INFO -    新WorkflowView: <ui.workflow_view.WorkflowView(0x1aeb39b3e30) at 0x000001AEBF40C300>
+2025-11-27 08:56:14,929 - ui.main_window - INFO -    当前拖拽模式: DragMode.ScrollHandDrag
+2025-11-27 08:56:14,929 - ui.main_window - INFO -    已强制设置拖拽模式为: ScrollHandDrag
+2025-11-27 08:56:14,929 - ui.main_window - INFO -    场景大小: 1382.0x1268.0
+2025-11-27 08:56:14,929 - ui.main_window - INFO -    视口大小: 982x584
+2025-11-27 08:56:14,930 - ui.main_window - INFO -    卡片数量: 0
+2025-11-27 08:56:14,930 - ui.main_window - INFO -    横向滚动条可见: True
+2025-11-27 08:56:14,930 - ui.main_window - INFO -    纵向滚动条可见: True
+2025-11-27 08:56:14,930 - ui.main_window - WARNING -    ⚠️ 场景中没有items，无法调整场景大小
+2025-11-27 08:56:14,931 - ui.main_window - INFO - ✅ WorkflowView切换完成，可拖动: True
+2025-11-27 08:56:14,932 - ui.main_window - INFO - 📊 任务数量变化: 当前任务数=1
+2025-11-27 08:56:14,932 - ui.main_window - INFO -    显示执行面板
+2025-11-27 08:56:14,933 - ui.workflow_task_manager - INFO - 添加任务成功: ID=1, 名称='未命名工作流1'
+2025-11-27 08:56:14,933 - ui.workflow_tab_widget - INFO - 空白工作流创建成功: 未命名工作流1
+2025-11-27 08:56:14,933 - ui.main_window - INFO - 空白工作流创建成功，任务ID: 1
+2025-11-27 08:56:36,403 - ui.workflow_view - INFO - 序列化完成：找到 1 个卡片，0 个连接。
+2025-11-27 08:56:36,403 - ui.main_window - INFO - 新卡片添加: 0
+2025-11-27 08:56:38,189 - ui.main_window - INFO - 显示卡片 0 的参数面板
+2025-11-27 08:56:38,189 - ui.parameter_panel - INFO - 显示卡片 0 (VU超级找图) 的参数设置
+2025-11-27 08:56:49,867 - ui.main_window - INFO - 参数面板已关闭
+2025-11-27 08:57:07,106 - ui.workflow_view - INFO - 序列化完成：找到 2 个卡片，0 个连接。
+2025-11-27 08:57:07,107 - ui.main_window - INFO - 新卡片添加: 1
+2025-11-27 08:57:08,512 - ui.main_window - INFO - 显示卡片 1 的参数面板
+2025-11-27 08:57:08,513 - ui.parameter_panel - INFO - 显示卡片 1 (VU AI找图) 的参数设置
+2025-11-27 08:57:09,919 - ui.main_window - INFO - 参数面板已关闭
+2025-11-27 08:57:10,767 - ui.main_window - WARNING - 🚨 MainWindow closeEvent triggered!
+2025-11-27 08:57:10,767 - utils.unified_dpi_handler - INFO - DPI监控已禁用
+2025-11-27 08:57:10,768 - ui.main_window - INFO - DPI监控已停止
+2025-11-27 08:57:12,239 - ui.main_window - INFO - closeEvent: 接受关闭事件，准备退出应用程序...
+2025-11-27 09:27:41,651 - __main__ - INFO - ================================================================================
+2025-11-27 09:27:41,651 - __main__ - INFO - 无忧自动化工具启动中...
+2025-11-27 09:27:41,651 - __main__ - INFO - ================================================================================
+2025-11-27 09:27:41,653 - __main__ - INFO - [OK] 程序已以管理员权限运行
+2025-11-27 09:27:41,661 - __main__ - ERROR - [FAIL] 配置文件中未找到VU注册码
+2025-11-27 09:27:41,661 - __main__ - WARNING - [WARN] VU插件初始化失败，将使用Python模式运行
+2025-11-27 09:27:41,661 - __main__ - INFO - [INFO] 程序将以有限功能模式启动（仅支持Python实现的功能）
+2025-11-27 09:27:41,666 - utils.universal_config_manager - WARNING - 配置文件不存在，使用默认配置: C:\Users\x\Desktop\wy\config\universal_system_config.json
+2025-11-27 09:27:41,901 - utils.screenshot_helper - WARNING - VU 截图不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)，截图功能将受限
+2025-11-27 09:27:41,904 - utils.emulator_text_input_new - INFO - 成功导入新的模拟器按键映射模块
+2025-11-27 09:27:41,918 - utils.mumu_manager - INFO - 开始从运行中的进程查找MuMu模拟器...
+2025-11-27 09:27:41,926 - utils.mumu_manager - INFO - 尝试通过MuMu窗口查找安装路径...
+2025-11-27 09:27:41,927 - utils.mumu_manager - WARNING - 未找到MuMuManager.exe，MuMu模拟器功能将不可用
+2025-11-27 09:27:41,927 - utils.mumu_manager - WARNING - ⚠ MuMuManager初始化失败：未找到MuMuManager.exe
+2025-11-27 09:27:41,928 - services.unified_ocr_service - WARNING - VU OCR 不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)
+2025-11-27 09:27:42,101 - utils.input_simulation.factory - INFO - 默认操作模式已设置为: auto
+2025-11-27 09:27:42,101 - utils.backend_modes - INFO - 全局操作模式已设置为: auto
+2025-11-27 09:27:42,102 - utils.input_simulation.factory - WARNING - 无效的执行模式: foreground_driver
+2025-11-27 09:27:42,102 - utils.backend_modes - INFO - 全局执行模式已设置为: foreground_driver
+2025-11-27 09:27:42,110 - ui.workflow_task_manager - INFO - 工作流任务管理器初始化完成
+2025-11-27 09:27:42,117 - ui.workflow_tab_widget - INFO - 工作流标签页控件初始化完成
+2025-11-27 09:27:42,143 - utils.unified_dpi_handler - INFO - 统一DPI处理器初始化完成
+2025-11-27 09:27:42,143 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 09:27:42,145 - ui.main_window - INFO - DPI监控已设置
+2025-11-27 09:27:42,148 - root - INFO - 单窗口模式：未配置目标窗口标题或自定义分辨率，跳过初始大小调整。
+2025-11-27 09:27:42,148 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 09:27:42,148 - ui.main_window - INFO - DPI监控已启动
+2025-11-27 09:27:42,148 - ui.main_window - INFO - 快捷键信号已连接到安全执行方法
+2025-11-27 09:27:42,216 - ui.main_window - INFO - 已清除所有现有快捷键
+2025-11-27 09:27:42,318 - ui.main_window - INFO - 启动任务快捷键已设置: F9 (强制模式)
+2025-11-27 09:27:42,318 - ui.main_window - INFO - 停止任务快捷键已设置: F10 (强制模式)
+2025-11-27 09:27:42,319 - ui.main_window - INFO - ✓ 快捷键系统已更新 - 启动: F9, 停止: F10
+2025-11-27 09:27:42,320 - core.dual_mode_manager - INFO - ✅ 模式已切换到: python
+2025-11-27 09:27:42,320 - __main__ - INFO - [INFO] 无VU插件，强制使用Python模式
+2025-11-27 09:27:42,368 - __main__ - INFO - [OK] 主窗口已启动
+2025-11-27 09:27:42,427 - ui.main_window - INFO - 🔍 检查模拟器窗口状态...
+2025-11-27 09:27:42,429 - ui.main_window - INFO - ❌ 未检测到模拟器窗口，直接启用运行按钮
+2025-11-27 09:27:42,430 - ui.main_window - INFO - ✅ 运行按钮已启用（无需ADB初始化）
+2025-11-27 09:27:44,281 - ui.workflow_task - INFO - 创建任务: ID=1, 名称='未命名工作流1'
+2025-11-27 09:27:44,281 - ui.workflow_tab_widget - INFO - 添加第一个任务，显示标签栏
+2025-11-27 09:27:44,283 - root - INFO - WorkflowView Initialized.
+2025-11-27 09:27:44,287 - ui.workflow_tab_widget - INFO - 🎨 WorkflowView创建完成:
+2025-11-27 09:27:44,288 - ui.workflow_tab_widget - INFO -    dragMode: DragMode.ScrollHandDrag
+2025-11-27 09:27:44,288 - ui.workflow_tab_widget - INFO -    interactive: True
+2025-11-27 09:27:44,288 - ui.workflow_tab_widget - INFO -    enabled: True
+2025-11-27 09:27:44,288 - ui.workflow_tab_widget - INFO -    focusPolicy: 11
+2025-11-27 09:27:44,288 - ui.workflow_view - INFO - WorkflowView: 开始从数据字典加载工作流...
+2025-11-27 09:27:44,289 - ui.workflow_view - INFO -   [UNDO] Loading workflow in progress, keeping flag as True
+2025-11-27 09:27:44,289 - ui.workflow_view - INFO - Workflow cleared.
+2025-11-27 09:27:44,289 - ui.workflow_view - INFO - 未从文件恢复视图变换。
+2025-11-27 09:27:44,290 - ui.workflow_view - INFO - 工作流已从数据字典加载完成。卡片数: 0, 连接数: 0
+2025-11-27 09:27:44,290 - ui.workflow_view - INFO - 验证加载后的连接完整性...
+2025-11-27 09:27:44,290 - ui.workflow_view - INFO - 加载后连接验证通过，所有连接完整有效
+2025-11-27 09:27:44,291 - ui.workflow_view - INFO -   [UNDO] Cleared loading workflow flag
+2025-11-27 09:27:44,291 - ui.workflow_tab_widget - INFO -    加载后dragMode: DragMode.ScrollHandDrag
+2025-11-27 09:27:44,296 - ui.workflow_tab_widget - INFO - 📝 标签页插入: insert_index=0, 返回tab_index=0
+2025-11-27 09:27:44,296 - ui.workflow_tab_widget - INFO - 📊 映射关系重建完成:
+2025-11-27 09:27:44,297 - ui.workflow_tab_widget - INFO -    tab_to_task: {0: 1}
+2025-11-27 09:27:44,297 - ui.workflow_tab_widget - INFO -    task_to_tab: {1: 0}
+2025-11-27 09:27:44,299 - ui.workflow_tab_widget - INFO - 🔔 标签页变化事件触发: index=0, count=2
+2025-11-27 09:27:44,299 - ui.main_window - INFO - 🔄 切换到工作流标签页: task_id=1
+2025-11-27 09:27:44,299 - ui.main_window - INFO -    旧WorkflowView: None
+2025-11-27 09:27:44,299 - ui.main_window - INFO -    新WorkflowView: <ui.workflow_view.WorkflowView(0x19af7d95b30) at 0x0000019A8017C5C0>
+2025-11-27 09:27:44,300 - ui.main_window - INFO -    当前拖拽模式: DragMode.ScrollHandDrag
+2025-11-27 09:27:44,300 - ui.main_window - INFO -    已强制设置拖拽模式为: ScrollHandDrag
+2025-11-27 09:27:44,301 - ui.main_window - INFO -    场景大小: 1382.0x1268.0
+2025-11-27 09:27:44,301 - ui.main_window - INFO -    视口大小: 982x584
+2025-11-27 09:27:44,301 - ui.main_window - INFO -    卡片数量: 0
+2025-11-27 09:27:44,302 - ui.main_window - INFO -    横向滚动条可见: True
+2025-11-27 09:27:44,302 - ui.main_window - INFO -    纵向滚动条可见: True
+2025-11-27 09:27:44,302 - ui.main_window - WARNING -    ⚠️ 场景中没有items，无法调整场景大小
+2025-11-27 09:27:44,303 - ui.main_window - INFO - ✅ WorkflowView切换完成，可拖动: True
+2025-11-27 09:27:44,304 - ui.main_window - INFO - 📊 任务数量变化: 当前任务数=1
+2025-11-27 09:27:44,304 - ui.main_window - INFO -    显示执行面板
+2025-11-27 09:27:44,306 - ui.workflow_task_manager - INFO - 添加任务成功: ID=1, 名称='未命名工作流1'
+2025-11-27 09:27:44,306 - ui.workflow_tab_widget - INFO - 空白工作流创建成功: 未命名工作流1
+2025-11-27 09:27:44,306 - ui.main_window - INFO - 空白工作流创建成功，任务ID: 1
+2025-11-27 09:28:44,975 - ui.main_window - INFO - 打开全局设置前，MainWindow.config 中的 bound_windows: 0 个
+2025-11-27 09:28:44,976 - ui.main_window - INFO - GlobalSettingsDialog初始化: 从空列表开始,不加载历史绑定窗口
+2025-11-27 09:29:10,993 - ui.main_window - WARNING - 🚨 MainWindow closeEvent triggered!
+2025-11-27 09:29:10,993 - utils.unified_dpi_handler - INFO - DPI监控已禁用
+2025-11-27 09:29:10,994 - ui.main_window - INFO - DPI监控已停止
+2025-11-27 09:29:10,995 - ui.main_window - INFO - closeEvent: 接受关闭事件，准备退出应用程序...
+2025-11-27 12:01:26,915 - __main__ - INFO - ================================================================================
+2025-11-27 12:01:26,916 - __main__ - INFO - 无忧自动化工具启动中...
+2025-11-27 12:01:26,916 - __main__ - INFO - ================================================================================
+2025-11-27 12:01:26,918 - __main__ - INFO - [OK] 程序已以管理员权限运行
+2025-11-27 12:01:26,926 - __main__ - ERROR - [FAIL] 配置文件中未找到VU注册码
+2025-11-27 12:01:26,926 - __main__ - WARNING - [WARN] VU插件初始化失败，将使用Python模式运行
+2025-11-27 12:01:26,926 - __main__ - INFO - [INFO] 程序将以有限功能模式启动（仅支持Python实现的功能）
+2025-11-27 12:01:26,930 - utils.universal_config_manager - WARNING - 配置文件不存在，使用默认配置: C:\Users\x\Desktop\wy\config\universal_system_config.json
+2025-11-27 12:01:27,161 - utils.screenshot_helper - WARNING - VU 截图不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)，截图功能将受限
+2025-11-27 12:01:27,165 - utils.emulator_text_input_new - INFO - 成功导入新的模拟器按键映射模块
+2025-11-27 12:01:27,176 - utils.mumu_manager - INFO - 开始从运行中的进程查找MuMu模拟器...
+2025-11-27 12:01:27,183 - utils.mumu_manager - INFO - 尝试通过MuMu窗口查找安装路径...
+2025-11-27 12:01:27,183 - utils.mumu_manager - WARNING - 未找到MuMuManager.exe，MuMu模拟器功能将不可用
+2025-11-27 12:01:27,184 - utils.mumu_manager - WARNING - ⚠ MuMuManager初始化失败：未找到MuMuManager.exe
+2025-11-27 12:01:27,185 - services.unified_ocr_service - WARNING - VU OCR 不可用: cannot import name 'get_global_vu' from 'vu_global' (C:\Users\x\Desktop\wy\vu_global.py)
+2025-11-27 12:01:27,324 - utils.input_simulation.factory - INFO - 默认操作模式已设置为: auto
+2025-11-27 12:01:27,325 - utils.backend_modes - INFO - 全局操作模式已设置为: auto
+2025-11-27 12:01:27,325 - utils.input_simulation.factory - WARNING - 无效的执行模式: foreground_driver
+2025-11-27 12:01:27,325 - utils.backend_modes - INFO - 全局执行模式已设置为: foreground_driver
+2025-11-27 12:01:27,330 - ui.workflow_task_manager - INFO - 工作流任务管理器初始化完成
+2025-11-27 12:01:27,335 - ui.workflow_tab_widget - INFO - 工作流标签页控件初始化完成
+2025-11-27 12:01:27,359 - utils.unified_dpi_handler - INFO - 统一DPI处理器初始化完成
+2025-11-27 12:01:27,359 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 12:01:27,360 - ui.main_window - INFO - DPI监控已设置
+2025-11-27 12:01:27,362 - root - INFO - 单窗口模式：未配置目标窗口标题或自定义分辨率，跳过初始大小调整。
+2025-11-27 12:01:27,362 - utils.unified_dpi_handler - INFO - DPI监控已启用
+2025-11-27 12:01:27,362 - ui.main_window - INFO - DPI监控已启动
+2025-11-27 12:01:27,363 - ui.main_window - INFO - 快捷键信号已连接到安全执行方法
+2025-11-27 12:01:27,440 - ui.main_window - INFO - 已清除所有现有快捷键
+2025-11-27 12:01:27,541 - ui.main_window - INFO - 启动任务快捷键已设置: F9 (强制模式)
+2025-11-27 12:01:27,542 - ui.main_window - INFO - 停止任务快捷键已设置: F10 (强制模式)
+2025-11-27 12:01:27,543 - ui.main_window - INFO - ✓ 快捷键系统已更新 - 启动: F9, 停止: F10
+2025-11-27 12:01:27,545 - core.dual_mode_manager - INFO - ✅ 模式已切换到: python
+2025-11-27 12:01:27,546 - __main__ - INFO - [INFO] 无VU插件，强制使用Python模式
+2025-11-27 12:01:27,600 - __main__ - INFO - [OK] 主窗口已启动
+2025-11-27 12:01:27,651 - ui.main_window - INFO - 🔍 检查模拟器窗口状态...
+2025-11-27 12:01:27,652 - ui.main_window - INFO - ❌ 未检测到模拟器窗口，直接启用运行按钮
+2025-11-27 12:01:27,652 - ui.main_window - INFO - ✅ 运行按钮已启用（无需ADB初始化）
+2025-11-27 12:01:35,807 - ui.workflow_task - INFO - 创建任务: ID=1, 名称='未命名工作流1'
+2025-11-27 12:01:35,807 - ui.workflow_tab_widget - INFO - 添加第一个任务，显示标签栏
+2025-11-27 12:01:35,810 - root - INFO - WorkflowView Initialized.
+2025-11-27 12:01:35,817 - ui.workflow_tab_widget - INFO - 🎨 WorkflowView创建完成:
+2025-11-27 12:01:35,818 - ui.workflow_tab_widget - INFO -    dragMode: DragMode.ScrollHandDrag
+2025-11-27 12:01:35,818 - ui.workflow_tab_widget - INFO -    interactive: True
+2025-11-27 12:01:35,819 - ui.workflow_tab_widget - INFO -    enabled: True
+2025-11-27 12:01:35,819 - ui.workflow_tab_widget - INFO -    focusPolicy: 11
+2025-11-27 12:01:35,819 - ui.workflow_view - INFO - WorkflowView: 开始从数据字典加载工作流...
+2025-11-27 12:01:35,820 - ui.workflow_view - INFO -   [UNDO] Loading workflow in progress, keeping flag as True
+2025-11-27 12:01:35,820 - ui.workflow_view - INFO - Workflow cleared.
+2025-11-27 12:01:35,820 - ui.workflow_view - INFO - 未从文件恢复视图变换。
+2025-11-27 12:01:35,821 - ui.workflow_view - INFO - 工作流已从数据字典加载完成。卡片数: 0, 连接数: 0
+2025-11-27 12:01:35,821 - ui.workflow_view - INFO - 验证加载后的连接完整性...
+2025-11-27 12:01:35,821 - ui.workflow_view - INFO - 加载后连接验证通过，所有连接完整有效
+2025-11-27 12:01:35,822 - ui.workflow_view - INFO -   [UNDO] Cleared loading workflow flag
+2025-11-27 12:01:35,822 - ui.workflow_tab_widget - INFO -    加载后dragMode: DragMode.ScrollHandDrag
+2025-11-27 12:01:35,824 - ui.workflow_tab_widget - INFO - 📝 标签页插入: insert_index=0, 返回tab_index=0
+2025-11-27 12:01:35,825 - ui.workflow_tab_widget - INFO - 📊 映射关系重建完成:
+2025-11-27 12:01:35,825 - ui.workflow_tab_widget - INFO -    tab_to_task: {0: 1}
+2025-11-27 12:01:35,825 - ui.workflow_tab_widget - INFO -    task_to_tab: {1: 0}
+2025-11-27 12:01:35,826 - ui.workflow_tab_widget - INFO - 🔔 标签页变化事件触发: index=0, count=2
+2025-11-27 12:01:35,826 - ui.main_window - INFO - 🔄 切换到工作流标签页: task_id=1
+2025-11-27 12:01:35,826 - ui.main_window - INFO -    旧WorkflowView: None
+2025-11-27 12:01:35,827 - ui.main_window - INFO -    新WorkflowView: <ui.workflow_view.WorkflowView(0x21afd0806b0) at 0x0000021A827DA240>
+2025-11-27 12:01:35,828 - ui.main_window - INFO -    当前拖拽模式: DragMode.ScrollHandDrag
+2025-11-27 12:01:35,828 - ui.main_window - INFO -    已强制设置拖拽模式为: ScrollHandDrag
+2025-11-27 12:01:35,828 - ui.main_window - INFO -    场景大小: 1382.0x1268.0
+2025-11-27 12:01:35,828 - ui.main_window - INFO -    视口大小: 982x584
+2025-11-27 12:01:35,829 - ui.main_window - INFO -    卡片数量: 0
+2025-11-27 12:01:35,829 - ui.main_window - INFO -    横向滚动条可见: True
+2025-11-27 12:01:35,829 - ui.main_window - INFO -    纵向滚动条可见: True
+2025-11-27 12:01:35,829 - ui.main_window - WARNING -    ⚠️ 场景中没有items，无法调整场景大小
+2025-11-27 12:01:35,830 - ui.main_window - INFO - ✅ WorkflowView切换完成，可拖动: True
+2025-11-27 12:01:35,831 - ui.main_window - INFO - 📊 任务数量变化: 当前任务数=1
+2025-11-27 12:01:35,832 - ui.main_window - INFO -    显示执行面板
+2025-11-27 12:01:35,836 - ui.workflow_task_manager - INFO - 添加任务成功: ID=1, 名称='未命名工作流1'
+2025-11-27 12:01:35,836 - ui.workflow_tab_widget - INFO - 空白工作流创建成功: 未命名工作流1
+2025-11-27 12:01:35,837 - ui.main_window - INFO - 空白工作流创建成功，任务ID: 1
+2025-11-27 13:22:27,906 - ui.main_window - WARNING - 🚨 MainWindow closeEvent triggered!
+2025-11-27 13:22:27,906 - utils.unified_dpi_handler - INFO - DPI监控已禁用
+2025-11-27 13:22:27,908 - ui.main_window - INFO - DPI监控已停止
+2025-11-27 13:22:27,909 - ui.main_window - INFO - closeEvent: 接受关闭事件，准备退出应用程序...
